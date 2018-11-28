@@ -39,6 +39,8 @@
 .flaticon-menu:before { content: "\f108"; }
 
 
+/*---- Elément natif */
+
 body{
     margin: 0;
     padding: 0;
@@ -52,6 +54,9 @@ a{
     text-decoration: none;
     color: inherit;
 }
+
+
+/*------ Menu du haut */
 
 h1{
     font-style: 18px;
@@ -70,6 +75,10 @@ nav{
 }
 
 
+.logo{
+    height: 30px;
+}
+
 .flex-icon-nav{
     display: flex;
     justify-content: space-around;
@@ -81,9 +90,15 @@ nav{
     display: none;
 }
 
-.logo{
-    height: 30px;
+.barre{
+    width: 1px;
+    background-color: #616161;
+    height: 22px;
+    display: none;
 }
+
+
+/*------- Menu du bas */
 
 .liste-menu{
     margin-top: 250px;
@@ -109,6 +124,10 @@ nav{
     font-size: 22px;
 }
 
+
+
+/*----- Sidebar media */
+
 .bloc-icon{
     background-color: #1f68ed;
     padding: 13px;
@@ -123,6 +142,20 @@ nav{
 .bloc-icon i{
     color: white;
 }
+
+.bloc-icon p{
+    margin: 0;
+    display: none;
+}
+
+.sidebar{
+    width: 130px;
+    margin-top: 100px;
+    display: none;
+}
+
+/*---- Animation au survol des medias icons */
+
 
 .bloc-icon:hover{
     background-color: #3bb8e1;
@@ -156,23 +189,12 @@ nav{
     width: 100%;
 }
 
-.bloc-icon p{
-    margin: 0;
-    display: none;
-}
 
-.sidebar{
-    width: 130px;
-    margin-top: 100px;
-    display: none;
-}
 
-.barre{
-    width: 1px;
-    background-color: #616161;
-    height: 22px;
-    display: none;
-}
+
+
+/*---- A partir de tablette portrait */
+
 
 @media screen and (min-width: 768px) {
     .sidebar, .flex-icon-nav span, .flaticon-sun:before, .barre{
