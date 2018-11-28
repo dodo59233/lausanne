@@ -1,0 +1,194 @@
+/*
+  Flaticon icon font: Flaticon
+  Creation date: 19/11/2018 15:34
+  */
+
+@font-face {
+    font-family: "Flaticon";
+    src: url("../my-icons-collection/font/Flaticon.eot");
+    src: url("../my-icons-collection/font/Flaticon.eot?#iefix") format("embedded-opentype"),
+    url("../my-icons-collection/font/Flaticon.woff") format("woff"),
+    url("../my-icons-collection/font/Flaticon.ttf") format("truetype"),
+    url("../my-icons-collection/font/Flaticon.svg#Flaticon") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family: "Flaticon";
+        src: url("./Flaticon.svg#Flaticon") format("svg");
+    }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+    font-family: Flaticon;
+    font-size: 20px;
+    font-style: normal;
+}
+
+.flaticon-facebook-logo:before { content: "\f100"; }
+.flaticon-twitter-logo-silhouette:before { content: "\f101"; }
+.flaticon-instagram-social-network-logo-of-photo-camera:before { content: "\f102"; }
+.flaticon-pinterest-logo:before { content: "\f103"; }
+.flaticon-youtube:before { content: "\f104"; }
+.flaticon-linkedin-logo:before { content: "\f105"; }
+.flaticon-search:before { content: "\f106"; font-size: 22px; }
+.flaticon-sun:before { content: "\f107"; display: none; }
+.flaticon-menu:before { content: "\f108"; }
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/lauzanne_img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+h1{
+    font-style: 18px;
+}
+
+header{
+    background-color: rgba(0,0,0,0.7);
+    padding: 8px 10px;
+    color: white;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.flex-icon-nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 65px;
+}
+
+.flex-icon-nav span{
+    display: none;
+}
+
+.logo{
+    height: 30px;
+}
+
+.liste-menu{
+    margin-top: 250px;
+    color: white;
+}
+
+.liste-menu ul{
+    margin: 0 auto;
+    width: 80%;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.liste-menu ul li{
+    background-color: rgba(47, 47, 47, 0.7);
+    border-bottom: 1px solid grey;
+}
+
+.liste-menu h2{
+    margin: 0;
+    padding: 20px 0;
+    font-size: 22px;
+}
+
+.bloc-icon{
+    background-color: #1f68ed;
+    padding: 13px;
+    display: flex;
+    width: 40%;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.bloc-icon i{
+    color: white;
+}
+
+.bloc-icon:hover{
+    background-color: #3bb8e1;
+    color: white;
+}
+
+.bloc-icon:nth-child(1):hover:after{
+    content: 'Facebook';
+}
+
+.bloc-icon:nth-child(2):hover:after{
+    content: 'Twitter';
+}
+
+.bloc-icon:nth-child(3):hover:after{
+    content: 'Instagram';
+}
+
+.bloc-icon:nth-child(4):hover:after{
+    content: 'Pinterest';
+}
+
+.bloc-icon:nth-child(5):hover:after{
+    content: 'Youtube';
+}
+
+.bloc-icon:nth-child(6):hover:after{
+    content: 'Linkedin';
+}
+.bloc-icon:hover{
+    width: 100%;
+}
+
+.bloc-icon p{
+    margin: 0;
+    display: none;
+}
+
+.sidebar{
+    width: 130px;
+    margin-top: 100px;
+    display: none;
+}
+
+.barre{
+    width: 1px;
+    background-color: #616161;
+    height: 22px;
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .sidebar, .flex-icon-nav span, .flaticon-sun:before, .barre{
+        display: block;
+    }
+
+    .liste-menu ul{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .liste-menu ul li {
+        width: 33%;
+    }
+
+    .flex-icon-nav{
+        width: 150px;
+    }
+}
